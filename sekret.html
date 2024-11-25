@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>!!АДМИНСКАЯ СТРАНИЦА!!</title>
+    <style>
+        /* Убираем margin и padding у body и html */
+        body, html {
+            height: 100%;  /* Задаём полную высоту для body и html */
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Центрируем содержимое по горизонтали */
+            align-items: center;     /* Центрируем содержимое по вертикали */
+            background-color: #f0f0f0;
+        }
+
+        /* Контейнер для видео */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1920px;  /* Ширина видео */
+            height: 1080;  /* Высота будет зависеть от пропорций видео */
+        }
+
+        /* Стили для самого видео */
+        video {
+            width: 100%;  /* Видео будет растягиваться на всю ширину контейнера */
+            height: auto; /* Пропорции видео сохраняются */
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video controls>
+            <source src="Rick Roll.mp4" type="video/mp4">
+            Ваш браузер не поддерживает тег <code>video</code>.
+        </video>
+    </div>
+</body>
+</html>
